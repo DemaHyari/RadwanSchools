@@ -1,0 +1,26 @@
+$whiteColor: #fff;
+$redColor: #941116;
+$hoverColor: #851014;
+$darkColor: #444444;
+$pColor: #f2f2f2;
+@font-face {
+  font-family: "Dubai Regular";
+  src: url(../../../vendor/font/dubai-regular-webfont.woff);
+}
+@font-face {
+  font-family: "Dubai Light";
+  src: url(../../../vendor/font/Dubai-Light.woff);
+}
+
+$mainFont: "Dubai Light";
+$headingFont: "Dubai Regular";
+body {
+  font-family: $mainFont;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $headingFont;
+}

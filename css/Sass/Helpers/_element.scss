@@ -1,0 +1,80 @@
+.btns {
+  background-color: transparent;
+  border: 1px solid $redColor;
+  color: $redColor;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 0px 14px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  transition: 0.6s ease-in-out;
+  &:hover {
+    color: $whiteColor;
+    background-color: $redColor;
+  }
+}
+.para {
+  padding: 5px;
+  font-size: 20px;
+  line-height: 1.7;
+  @media (max-width: 767px), (min-width: 768px) and (max-width: 992px) {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+.slick-dots {
+  li {
+    button {
+      &::before {
+        font-size: 8px;
+        color: transparent;
+        border: 1px solid $redColor;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &.slick-active {
+      button {
+        &::before {
+          background-color: $redColor;
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+.calender {
+  position: fixed;
+  top: 70%;
+  left: 50px;
+  z-index: 9999;
+
+  cursor: pointer;
+  .date {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    left: 0;
+    background-color: #fff;
+    margin: 0;
+    padding: 15px 0px 80px;
+    border-radius: 65px 65px 66px 66px;
+    .dateText {
+      color: $redColor;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  i {
+    background-color: $whiteColor;
+    color: $redColor;
+    border-radius: 50%;
+    padding: 22px;
+    font-weight: 550;
+    font-size: 35px;
+    box-shadow: 0 0 5px 1px rgba(38, 38, 38, 0.69);
+  }
+}
